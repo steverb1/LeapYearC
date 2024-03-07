@@ -18,17 +18,45 @@
 	ProcessorCacheSize="32768"
 	NumberOfLogicalCPU="8"
 	NumberOfPhysicalCPU="4"
-	TotalVirtualMemory="2048"
+	TotalVirtualMemory="3072"
 	TotalPhysicalMemory="16384"
 	LogicalProcessorsPerPhysical="8"
 	ProcessorClockFrequency="2000"
 	>
 	<Testing>
-		<StartDateTime>Mar 07 08:41 PST</StartDateTime>
-		<StartTestTime>1709829679</StartTestTime>
-		<TestList/>
-		<EndDateTime>Mar 07 08:41 PST</EndDateTime>
-		<EndTestTime>1709829679</EndTestTime>
+		<StartDateTime>Mar 07 14:00 PST</StartDateTime>
+		<StartTestTime>1709848845</StartTestTime>
+		<TestList>
+			<Test>./LeapYearTest.DivisibleByFoo</Test>
+		</TestList>
+		<Test Status="passed">
+			<Name>LeapYearTest.DivisibleByFoo</Name>
+			<Path>.</Path>
+			<FullName>./LeapYearTest.DivisibleByFoo</FullName>
+			<FullCommandLine>/Users/steve.bement/Code/LeapYearC/build/LeapYearCheckerTest "--gtest_filter=LeapYearTest.DivisibleByFoo" "--gtest_also_run_disabled_tests"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.0746885</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/Users/steve.bement/Code/LeapYearC/build/LeapYearCheckerTest "--gtest_filter=LeapYearTest.DivisibleByFoo" "--gtest_also_run_disabled_tests"</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value encoding="base64" compression="gzip">eJyNULFuwjAQ3f0VN5IhdlkrMbRAGahoFcpQRRFykiOy5NiRfUnVv2+cUBQqFfGmO9/zu/cuaY1RpoJaKjOL4ORsDeLg0XnhCTvkOdZoSCxtieIVZfOJ0i1F3ipdimOJjReVtZVGQk+xd8WkFUMbqmOQ50XBdpbwETYDBT76CZyUJnSwgF/x8MpXqlNe5Rqfv1+sZeniggySs+U50CAQLJ9r3ypCztL4ggw22uZSj3M0nXLWhETgkeK2+UOeak4NsRSSww4GZLetjiR4294mwuwBah/dt34kA1mSOmL35aP+b1zaL3N9vf+uBk4afr2nj/L+tN+vVyHzyOXsB1dktbM=</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<EndDateTime>Mar 07 14:00 PST</EndDateTime>
+		<EndTestTime>1709848845</EndTestTime>
 		<ElapsedMinutes>0</ElapsedMinutes>
 	</Testing>
 </Site>

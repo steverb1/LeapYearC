@@ -16,10 +16,18 @@ unset(ENV{CMAKE_TOOLCHAIN_FILE})
 project(googletest-populate NONE)
 
 
+# Pass through things we've already detected in the main project to avoid
+# paying the cost of redetecting them again in ExternalProject_Add()
+set(GIT_EXECUTABLE [==[/usr/bin/git]==])
+set(GIT_VERSION_STRING [==[2.39.3 (Apple Git-146)]==])
+set_property(GLOBAL PROPERTY _CMAKE_FindGit_GIT_EXECUTABLE_VERSION
+  [==[/usr/bin/git;2.39.3 (Apple Git-146)]==]
+)
+
 
 include(ExternalProject)
 ExternalProject_Add(googletest-populate
-                     "UPDATE_DISCONNECTED" "False" "DOWNLOAD_EXTRACT_TIMESTAMP" "TRUE" "EXTERNALPROJECT_INTERNAL_ARGUMENT_SEPARATOR" "URL" "https://github.com/google/googletest/archive/03597a01ee50ed33e9dfd640b249b4be3799d395.zip"
+                     "UPDATE_DISCONNECTED" "False" "GIT_REPOSITORY" "https://github.com/google/googletest.git" "EXTERNALPROJECT_INTERNAL_ARGUMENT_SEPARATOR" "GIT_TAG" "v1.14.0"
                     SOURCE_DIR          "/Users/steve.bement/Code/LeapYearC/build/_deps/googletest-src"
                     BINARY_DIR          "/Users/steve.bement/Code/LeapYearC/build/_deps/googletest-build"
                     CONFIGURE_COMMAND   ""

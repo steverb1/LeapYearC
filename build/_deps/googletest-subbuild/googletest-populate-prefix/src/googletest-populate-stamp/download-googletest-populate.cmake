@@ -22,14 +22,14 @@ function(check_file_hash has_hash hash_is_good)
   set("${has_hash}" TRUE PARENT_SCOPE)
 
   message(STATUS "verifying file...
-       file='/Users/steve.bement/Code/LeapYearC/build/_deps/googletest-subbuild/googletest-populate-prefix/src/03597a01ee50ed33e9dfd640b249b4be3799d395.zip'")
+       file='/Users/steve.bement/Code/LeapYearC/build/_deps/googletest-subbuild/googletest-populate-prefix/src/archive.tar'")
 
-  file("" "/Users/steve.bement/Code/LeapYearC/build/_deps/googletest-subbuild/googletest-populate-prefix/src/03597a01ee50ed33e9dfd640b249b4be3799d395.zip" actual_value)
+  file("" "/Users/steve.bement/Code/LeapYearC/build/_deps/googletest-subbuild/googletest-populate-prefix/src/archive.tar" actual_value)
 
   if(NOT "${actual_value}" STREQUAL "")
     set("${hash_is_good}" FALSE PARENT_SCOPE)
     message(STATUS " hash of
-    /Users/steve.bement/Code/LeapYearC/build/_deps/googletest-subbuild/googletest-populate-prefix/src/03597a01ee50ed33e9dfd640b249b4be3799d395.zip
+    /Users/steve.bement/Code/LeapYearC/build/_deps/googletest-subbuild/googletest-populate-prefix/src/archive.tar
   does not match expected value
     expected: ''
       actual: '${actual_value}'")
@@ -71,32 +71,32 @@ function(sleep_before_download attempt)
   execute_process(COMMAND "${CMAKE_COMMAND}" -E sleep "${sleep_seconds}")
 endfunction()
 
-if(EXISTS "/Users/steve.bement/Code/LeapYearC/build/_deps/googletest-subbuild/googletest-populate-prefix/src/03597a01ee50ed33e9dfd640b249b4be3799d395.zip")
+if(EXISTS "/Users/steve.bement/Code/LeapYearC/build/_deps/googletest-subbuild/googletest-populate-prefix/src/archive.tar")
   check_file_hash(has_hash hash_is_good)
   if(has_hash)
     if(hash_is_good)
       message(STATUS "File already exists and hash match (skip download):
-  file='/Users/steve.bement/Code/LeapYearC/build/_deps/googletest-subbuild/googletest-populate-prefix/src/03597a01ee50ed33e9dfd640b249b4be3799d395.zip'
+  file='/Users/steve.bement/Code/LeapYearC/build/_deps/googletest-subbuild/googletest-populate-prefix/src/archive.tar'
   =''"
       )
       return()
     else()
       message(STATUS "File already exists but hash mismatch. Removing...")
-      file(REMOVE "/Users/steve.bement/Code/LeapYearC/build/_deps/googletest-subbuild/googletest-populate-prefix/src/03597a01ee50ed33e9dfd640b249b4be3799d395.zip")
+      file(REMOVE "/Users/steve.bement/Code/LeapYearC/build/_deps/googletest-subbuild/googletest-populate-prefix/src/archive.tar")
     endif()
   else()
     message(STATUS "File already exists but no hash specified (use URL_HASH):
-  file='/Users/steve.bement/Code/LeapYearC/build/_deps/googletest-subbuild/googletest-populate-prefix/src/03597a01ee50ed33e9dfd640b249b4be3799d395.zip'
+  file='/Users/steve.bement/Code/LeapYearC/build/_deps/googletest-subbuild/googletest-populate-prefix/src/archive.tar'
 Old file will be removed and new file downloaded from URL."
     )
-    file(REMOVE "/Users/steve.bement/Code/LeapYearC/build/_deps/googletest-subbuild/googletest-populate-prefix/src/03597a01ee50ed33e9dfd640b249b4be3799d395.zip")
+    file(REMOVE "/Users/steve.bement/Code/LeapYearC/build/_deps/googletest-subbuild/googletest-populate-prefix/src/archive.tar")
   endif()
 endif()
 
 set(retry_number 5)
 
 message(STATUS "Downloading...
-   dst='/Users/steve.bement/Code/LeapYearC/build/_deps/googletest-subbuild/googletest-populate-prefix/src/03597a01ee50ed33e9dfd640b249b4be3799d395.zip'
+   dst='/Users/steve.bement/Code/LeapYearC/build/_deps/googletest-subbuild/googletest-populate-prefix/src/archive.tar'
    timeout='none'
    inactivity timeout='none'"
 )
@@ -107,7 +107,7 @@ foreach(i RANGE ${retry_number})
   if(status_code IN_LIST download_retry_codes)
     sleep_before_download(${i})
   endif()
-  foreach(url IN ITEMS [====[https://github.com/google/googletest/archive/03597a01ee50ed33e9dfd640b249b4be3799d395.zip]====])
+  foreach(url IN ITEMS [====[https://github.com/google/googletest.git]====])
     if(NOT url IN_LIST skip_url_list)
       message(STATUS "Using src='${url}'")
 
@@ -118,7 +118,7 @@ foreach(i RANGE ${retry_number})
 
       file(
         DOWNLOAD
-        "${url}" "/Users/steve.bement/Code/LeapYearC/build/_deps/googletest-subbuild/googletest-populate-prefix/src/03597a01ee50ed33e9dfd640b249b4be3799d395.zip"
+        "${url}" "/Users/steve.bement/Code/LeapYearC/build/_deps/googletest-subbuild/googletest-populate-prefix/src/archive.tar"
         SHOW_PROGRESS
         # no TIMEOUT
         # no INACTIVITY_TIMEOUT
@@ -135,7 +135,7 @@ foreach(i RANGE ${retry_number})
         check_file_hash(has_hash hash_is_good)
         if(has_hash AND NOT hash_is_good)
           message(STATUS "Hash mismatch, removing...")
-          file(REMOVE "/Users/steve.bement/Code/LeapYearC/build/_deps/googletest-subbuild/googletest-populate-prefix/src/03597a01ee50ed33e9dfd640b249b4be3799d395.zip")
+          file(REMOVE "/Users/steve.bement/Code/LeapYearC/build/_deps/googletest-subbuild/googletest-populate-prefix/src/archive.tar")
         else()
           message(STATUS "Downloading... done")
           return()
