@@ -1,0 +1,38 @@
+[
+{
+  "directory": "/Users/steve.bement/Code/LeapYearC/build",
+  "command": "/usr/bin/clang++  -isystem /Users/steve.bement/Code/LeapYearC/build/_deps/googletest-src/googletest/include -isystem /Users/steve.bement/Code/LeapYearC/build/_deps/googletest-src/googletest -g -std=gnu++14 -o CMakeFiles/LeapYearCheckerTest.dir/tests/LeapYearCheckerTest.cpp.o -c /Users/steve.bement/Code/LeapYearC/tests/LeapYearCheckerTest.cpp",
+  "file": "/Users/steve.bement/Code/LeapYearC/tests/LeapYearCheckerTest.cpp",
+  "output": "CMakeFiles/LeapYearCheckerTest.dir/tests/LeapYearCheckerTest.cpp.o"
+},
+{
+  "directory": "/Users/steve.bement/Code/LeapYearC/build",
+  "command": "/usr/bin/clang  -isystem /Users/steve.bement/Code/LeapYearC/build/_deps/googletest-src/googletest/include -isystem /Users/steve.bement/Code/LeapYearC/build/_deps/googletest-src/googletest -g -o CMakeFiles/LeapYearCheckerTest.dir/src/LeapYear.c.o -c /Users/steve.bement/Code/LeapYearC/src/LeapYear.c",
+  "file": "/Users/steve.bement/Code/LeapYearC/src/LeapYear.c",
+  "output": "CMakeFiles/LeapYearCheckerTest.dir/src/LeapYear.c.o"
+},
+{
+  "directory": "/Users/steve.bement/Code/LeapYearC/build/_deps/googletest-build/googlemock",
+  "command": "/usr/bin/clang++  -I/Users/steve.bement/Code/LeapYearC/build/_deps/googletest-src/googlemock/include -I/Users/steve.bement/Code/LeapYearC/build/_deps/googletest-src/googlemock -isystem /Users/steve.bement/Code/LeapYearC/build/_deps/googletest-src/googletest/include -isystem /Users/steve.bement/Code/LeapYearC/build/_deps/googletest-src/googletest -g -std=c++14  -DGTEST_HAS_PTHREAD=1   -o CMakeFiles/gmock.dir/src/gmock-all.cc.o -c /Users/steve.bement/Code/LeapYearC/build/_deps/googletest-src/googlemock/src/gmock-all.cc",
+  "file": "/Users/steve.bement/Code/LeapYearC/build/_deps/googletest-src/googlemock/src/gmock-all.cc",
+  "output": "_deps/googletest-build/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o"
+},
+{
+  "directory": "/Users/steve.bement/Code/LeapYearC/build/_deps/googletest-build/googlemock",
+  "command": "/usr/bin/clang++  -isystem /Users/steve.bement/Code/LeapYearC/build/_deps/googletest-src/googlemock/include -isystem /Users/steve.bement/Code/LeapYearC/build/_deps/googletest-src/googlemock -isystem /Users/steve.bement/Code/LeapYearC/build/_deps/googletest-src/googletest/include -isystem /Users/steve.bement/Code/LeapYearC/build/_deps/googletest-src/googletest -g -std=c++14  -DGTEST_HAS_PTHREAD=1   -o CMakeFiles/gmock_main.dir/src/gmock_main.cc.o -c /Users/steve.bement/Code/LeapYearC/build/_deps/googletest-src/googlemock/src/gmock_main.cc",
+  "file": "/Users/steve.bement/Code/LeapYearC/build/_deps/googletest-src/googlemock/src/gmock_main.cc",
+  "output": "_deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o"
+},
+{
+  "directory": "/Users/steve.bement/Code/LeapYearC/build/_deps/googletest-build/googletest",
+  "command": "/usr/bin/clang++  -I/Users/steve.bement/Code/LeapYearC/build/_deps/googletest-src/googletest/include -I/Users/steve.bement/Code/LeapYearC/build/_deps/googletest-src/googletest -g -std=c++14  -DGTEST_HAS_PTHREAD=1   -o CMakeFiles/gtest.dir/src/gtest-all.cc.o -c /Users/steve.bement/Code/LeapYearC/build/_deps/googletest-src/googletest/src/gtest-all.cc",
+  "file": "/Users/steve.bement/Code/LeapYearC/build/_deps/googletest-src/googletest/src/gtest-all.cc",
+  "output": "_deps/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o"
+},
+{
+  "directory": "/Users/steve.bement/Code/LeapYearC/build/_deps/googletest-build/googletest",
+  "command": "/usr/bin/clang++  -isystem /Users/steve.bement/Code/LeapYearC/build/_deps/googletest-src/googletest/include -isystem /Users/steve.bement/Code/LeapYearC/build/_deps/googletest-src/googletest -g -std=c++14  -DGTEST_HAS_PTHREAD=1   -o CMakeFiles/gtest_main.dir/src/gtest_main.cc.o -c /Users/steve.bement/Code/LeapYearC/build/_deps/googletest-src/googletest/src/gtest_main.cc",
+  "file": "/Users/steve.bement/Code/LeapYearC/build/_deps/googletest-src/googletest/src/gtest_main.cc",
+  "output": "_deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o"
+}
+]

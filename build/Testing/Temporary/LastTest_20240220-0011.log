@@ -1,0 +1,30 @@
+Start testing: Feb 19 17:15 MST
+----------------------------------------------------------
+5/5 Testing: LeapYearTest.DivisibleByFoo
+5/5 Test: LeapYearTest.DivisibleByFoo
+Command: "/Users/steve.bement/Code/LeapYearC/build/LeapYearCheckerTest" "--gtest_filter=LeapYearTest.DivisibleByFoo" "--gtest_also_run_disabled_tests"
+Directory: /Users/steve.bement/Code/LeapYearC/build
+"LeapYearTest.DivisibleByFoo" start time: Feb 19 17:15 MST
+Output:
+----------------------------------------------------------
+Running main() from /Users/steve.bement/Code/LeapYearC/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = LeapYearTest.DivisibleByFoo
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from LeapYearTest
+[ RUN      ] LeapYearTest.DivisibleByFoo
+[       OK ] LeapYearTest.DivisibleByFoo (0 ms)
+[----------] 1 test from LeapYearTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.08 sec
+----------------------------------------------------------
+Test Passed.
+"LeapYearTest.DivisibleByFoo" end time: Feb 19 17:15 MST
+"LeapYearTest.DivisibleByFoo" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Feb 19 17:15 MST

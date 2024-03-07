@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Site BuildName="(empty)"
+	BuildStamp="20240220-0011-Experimental"
+	Name="(empty)"
+	Generator="ctest-3.29.0-rc1"
+	CompilerName=""
+	CompilerVersion=""
+	OSName="macOS"
+	Hostname="AMAC02DD9GAML7H"
+	OSRelease="14.2.1"
+	OSVersion="23C71"
+	OSPlatform="x86_64"
+	Is64Bits="1"
+	VendorString="GenuineIntel"
+	VendorID="Intel Corporation"
+	FamilyID="6"
+	ModelID="126"
+	ProcessorCacheSize="32768"
+	NumberOfLogicalCPU="8"
+	NumberOfPhysicalCPU="4"
+	TotalVirtualMemory="8192"
+	TotalPhysicalMemory="16384"
+	LogicalProcessorsPerPhysical="8"
+	ProcessorClockFrequency="2000"
+	>
+	<Testing>
+		<StartDateTime>Feb 19 17:15 MST</StartDateTime>
+		<StartTestTime>1708388118</StartTestTime>
+		<TestList>
+			<Test>./LeapYearTest.DivisibleByFoo</Test>
+		</TestList>
+		<Test Status="passed">
+			<Name>LeapYearTest.DivisibleByFoo</Name>
+			<Path>.</Path>
+			<FullName>./LeapYearTest.DivisibleByFoo</FullName>
+			<FullCommandLine>/Users/steve.bement/Code/LeapYearC/build/LeapYearCheckerTest "--gtest_filter=LeapYearTest.DivisibleByFoo" "--gtest_also_run_disabled_tests"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.077203</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/Users/steve.bement/Code/LeapYearC/build/LeapYearCheckerTest "--gtest_filter=LeapYearTest.DivisibleByFoo" "--gtest_also_run_disabled_tests"</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value encoding="base64" compression="gzip">eJyNULFuwjAQ3f0VN5IhdlkrMbRAGahoFcpQRRFykiOy5NiRfUnVv2+cUBQqFfGmO9/zu/cuaY1RpoJaKjOL4ORsDeLg0XnhCTvkOdZoSCxtieIVZfOJ0i1F3ipdimOJjReVtZVGQk+xd8WkFUMbqmOQ50XBdpbwETYDBT76CZyUJnSwgF/x8MpXqlNe5Rqfv1+sZeniggySs+U50CAQLJ9r3ypCztL4ggw22uZSj3M0nXLWhETgkeK2+UOeak4NsRSSww4GZLetjiR4294mwuwBah/dt34kA1mSOmL35aP+b1zaL3N9vf+uBk4afr2nj/L+tN+vVyHzyOXsB1dktbM=</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<EndDateTime>Feb 19 17:15 MST</EndDateTime>
+		<EndTestTime>1708388118</EndTestTime>
+		<ElapsedMinutes>0</ElapsedMinutes>
+	</Testing>
+</Site>

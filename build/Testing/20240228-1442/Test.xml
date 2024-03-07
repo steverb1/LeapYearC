@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Site BuildName="(empty)"
+	BuildStamp="20240228-1442-Experimental"
+	Name="(empty)"
+	Generator="ctest-3.29.0-rc1"
+	CompilerName=""
+	CompilerVersion=""
+	OSName="macOS"
+	Hostname="AMAC02DD9GAML7H"
+	OSRelease="14.2.1"
+	OSVersion="23C71"
+	OSPlatform="x86_64"
+	Is64Bits="1"
+	VendorString="GenuineIntel"
+	VendorID="Intel Corporation"
+	FamilyID="6"
+	ModelID="126"
+	ProcessorCacheSize="32768"
+	NumberOfLogicalCPU="8"
+	NumberOfPhysicalCPU="4"
+	TotalVirtualMemory="3072"
+	TotalPhysicalMemory="16384"
+	LogicalProcessorsPerPhysical="8"
+	ProcessorClockFrequency="2000"
+	>
+	<Testing>
+		<StartDateTime>Feb 28 07:42 MST</StartDateTime>
+		<StartTestTime>1709131376</StartTestTime>
+		<TestList/>
+		<EndDateTime>Feb 28 07:42 MST</EndDateTime>
+		<EndTestTime>1709131376</EndTestTime>
+		<ElapsedMinutes>0</ElapsedMinutes>
+	</Testing>
+</Site>

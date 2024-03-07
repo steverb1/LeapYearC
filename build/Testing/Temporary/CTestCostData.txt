@@ -1,0 +1,6 @@
+LeapYearTest.NotDivisibleByFour 42 0.103074
+LeapYearTest.DivisibleByFour 27 0.110477
+LeapYearTest.DivisibleBy100 29 0.104844
+LeapYearTest.DivisibleBy400 23 0.113086
+LeapYearTest.DivisibleByFoo 20 0.123104
+---

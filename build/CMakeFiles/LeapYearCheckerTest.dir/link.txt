@@ -1,0 +1,1 @@
+/usr/bin/clang++ -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/LeapYearCheckerTest.dir/tests/LeapYearCheckerTest.cpp.o CMakeFiles/LeapYearCheckerTest.dir/src/LeapYear.c.o -o LeapYearCheckerTest  lib/libgtest_main.a lib/libgtest.a
